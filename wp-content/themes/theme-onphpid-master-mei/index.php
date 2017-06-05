@@ -234,6 +234,17 @@ get_header();?>
 </div>
 </section>
 
+		<!-- Created by Abdurohman-->
+		<div class="container">
+		  <div class="row">
+		    <div id="ckan-headline-box" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<!-- Ckan datasets will be added dynamically here -->
+		    </div>
+		  </div>
+		</div>
+		<br>
+		<!-- Enjoy!-->
+
 <section>
   <div class="container">
     <div class="row">
@@ -294,124 +305,127 @@ get_header();?>
     <?php
     get_footer();?>
 
-
-
-
-    <script type="text/javascript">
+		<!-- Created by Abdurohman-->
+		<script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2013',  1000,      400],
-          ['2014',  1170,      460],
-          ['2015',  660,       1120],
-          ['2016',  1030,      540]
-          ]);
-
-        var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-
-
-
-
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-          ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-    </script>
-
-
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-          ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          is3D: true,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-    </script>
-
-
-
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('number', 'x');
-        data.addColumn('number', 'values');
-        data.addColumn({id:'i0', type:'number', role:'interval'});
-        data.addColumn({id:'i1', type:'number', role:'interval'});
-        data.addColumn({id:'i2', type:'number', role:'interval'});
-        data.addColumn({id:'i2', type:'number', role:'interval'});
-        data.addColumn({id:'i2', type:'number', role:'interval'});
-        data.addColumn({id:'i2', type:'number', role:'interval'});
-
-        data.addRows([
-          [1, 100, 90, 110, 85, 96, 104, 120],
-          [2, 120, 95, 130, 90, 113, 124, 140],
-          [3, 130, 105, 140, 100, 117, 133, 139],
-          [4, 90, 85, 95, 85, 88, 92, 95],
-          [5, 70, 74, 63, 67, 69, 70, 72],
-          [6, 30, 39, 22, 21, 28, 34, 40],
-          [7, 80, 77, 83, 70, 77, 85, 90],
-          [8, 100, 90, 110, 85, 95, 102, 110]]);
-
-        // The intervals data as narrow lines (useful for showing raw source data)
-        var options_lines = {
-          title: 'Line intervals, default',
-          curveType: 'function',
-          lineWidth: 4,
-          intervals: { 'style':'line' },
-          legend: 'none'
-        };
-
-        var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
-        chart_lines.draw(data, options_lines);
-      }
-    </script>
-
+			
+			//List of ckan urls API
+			var urlOrganizationList = 'http://202.89.117.149/api/3/action/organization_list?all_fields=true';
+			var urlGroupList = 'http://202.89.117.149/api/3/action/group_list?all_fields=true';
+			var urlFormatList = 'http://202.89.117.149/api/3/action/current_package_list_with_resources';
+			var urlTagList = 'http://202.89.117.149/api/3/action/tag_list?all_fields=true';
+			
+			buildHeadline();		//Create headline
+			
+			//create chart one-by-one
+			buildChart(urlOrganizationList, 'bar', 'Dataset Each Organization', 'donutchart');
+			buildChart(urlGroupList, 'pie', 'Dataset Each Group', 'piechart_3d');
+			buildChart(urlFormatList, 'pie', 'Dataset Each Format', 'chart_lines');
+			buildChart(urlTagList, 'bar', 'Dataset Each Tag', 'chart_div');
+			
+			function buildHeadline(){
+				$.getJSON(urlFormatList, function(JSONData){		//Get json data
+					for(var i = 0; i < 5; i++)
+						addCkanHeadline(i, JSONData);		//Add 5 headline to the page
+				});
+			}
+			
+			function addCkanHeadline(i, JSONData){
+				//Prepare data for headline from json object
+				var base_url = 'http://202.89.117.149/';
+				var title = JSONData['result'][i]['title'];
+				var url = base_url+'dataset/'+JSONData['result'][i]['name'];
+				var subtitle = JSONData['result'][i]['notes'];
+				var organization = JSONData['result'][i]['organization']['title'];
+				var organization_url = base_url+'organization/'+JSONData['result'][i]['organization']['id'];
+				var date = JSONData['result'][i]['metadata_created'].substring(0,10);
+				var resources = '', tags = '';
+				
+				//Get all resources for the dataset
+				for(var j = 0; j < JSONData['result'][i]['resources'].length; j++){
+					var resource_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&res_format='+JSONData['result'][i]['resources'][j]['format'];
+					resources = resources.concat("<a href='"+resource_url+"'><strong>"+JSONData['result'][i]['resources'][j]['format']+'</strong></a> ');
+				}
+				
+				//Get all tags for the dataset
+				for(var k = 0; k < JSONData['result'][i]['tags'].length; k++){
+					var tag_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&tags='+JSONData['result'][i]['tags'][k]['name'];
+					tags = tags.concat("<a href='"+tag_url+"'>#"+JSONData['result'][i]['tags'][k]['display_name']+'</a> ');
+				}
+				
+				//Put headline to the page
+		    var item = document.createElement("div");
+				item.setAttribute("class", "post-preview");
+				item.innerHTML = '<a href="'+url+'"><h2 class="post-title">'+title+'</h2><br><h3 class="post-subtitle">'+subtitle+'</h3><br></a><p class="post-meta">'+resources+'<a href="'+organization_url+'" style="float:right">'+organization+'</a><br>'+tags+'<i style="float:right">Created: '+date+'</i></p><hr>';
+				$("#ckan-headline-box").append(item);
+			}
+			
+			function buildChart(url, type, subject, elementID){
+				$.getJSON(url, function(JSONData){
+		      google.charts.setOnLoadCallback(function(){
+						//Chart option
+		        var options = {
+		          title: subject,
+		          hAxis: {title: 'Datasets'},
+							pieSliceText: 'value'
+		        };
+						
+						//Chart type
+						if(type == 'pie')
+							var chart = new google.visualization.PieChart(document.getElementById(elementID));
+						else
+							var chart = new google.visualization.ColumnChart(document.getElementById(elementID));
+						
+						//Define data category
+						var dataArray = [[subject, 'Dataset']];
+						
+						//Build data for chart
+						if(url == urlFormatList){
+							var formatList = {};
+							for(var i = 0; i < JSONData['result'].length; i++){
+								var format = '';
+								if(JSONData['result'][i]['resources'].length > 0){
+									format = JSONData['result'][i]['resources'][0]['format'];
+									formatList[format] ? formatList[format] += 1 : formatList[format] = 1;
+								}
+							}
+				
+							for (var key in formatList)
+							  if (formatList.hasOwnProperty(key))
+									dataArray.push([key,  formatList[key]]);
+							
+						}
+						else if(url == urlTagList){
+							for(var i = 0; i < JSONData['result'].length ; i++){
+								var tagID = JSONData['result'][i]['id'];
+								var tagUrl = 'http://202.89.117.149/api/3/action/tag_show?id=' + tagID + '&include_datasets=true';
+							
+								$.getJSON(tagUrl, function(tagJSONData){
+									var key = tagJSONData['result']['name'];
+									var value = tagJSONData['result']['packages'].length;
+									dataArray.push([key,  value]);
+									if(dataArray.length == JSONData['result'].length +1){
+						        var data = google.visualization.arrayToDataTable(dataArray);
+			        
+							      chart.draw(data, options);
+									}
+								});
+							}
+						}
+						else
+							for(var i = 0; i < JSONData['result'].length; i++)
+								dataArray.push([JSONData['result'][i]['name'],  JSONData['result'][i]['package_count']])
+												
+					
+		        var data = google.visualization.arrayToDataTable(dataArray);
+			      
+						if(url != urlTagList) 
+			      	chart.draw(data, options);
+		      });
+				});
+			}
+		</script>
+		<!-- Enjoy!-->
 
     <script type="text/javascript">
 
