@@ -33,9 +33,9 @@ a:hover,
 a:focus {
   color: #0085a1;
 }
-a img:hover,
-a img:focus {
-  cursor: zoom-in;
+.tombol-menu > a img:hover,
+.tombol-menu > a img:focus {
+  /*background-color: #4679B2;*/
 }
 blockquote {
   color: #808080;
@@ -394,6 +394,3 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
-
-
-

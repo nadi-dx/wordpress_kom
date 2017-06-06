@@ -90,3 +90,24 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 // custom wp_nav_menu untuk nav-bar bootstrap
 require get_template_directory() . '/bootstrap-walker.php';
+
+// Fungsi Tambahan
+
+if (isset($_POST['data'])){
+  $data = $_POST['data'];
+
+  $result = pencarian($data);
+}
+
+function site_ckan()
+{
+  $url = "http://202.89.117.149";
+  return $url;
+}
+
+function pencarian($data){
+  // $data = $_POST['data'];
+  $hasil = "".site_ckan()."/dataset?q=".$data."&sort=score+desc%2C+metadata_modified+desc";
+  header ("Location: ".$hasil."");
+  die();
+}

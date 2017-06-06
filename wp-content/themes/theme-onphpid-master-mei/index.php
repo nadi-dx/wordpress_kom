@@ -24,7 +24,9 @@ get_header();?>
             <h5 style="color: #fff; text-align: center;"></h5>
             <div class="input-group">
               <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
-              <input type="text" class="form-control" placeholder="Cari Data" aria-describedby="basic-addon1">
+              <form action="functions.php" method="post">
+                <input type="text" class="form-control" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
+                </form>
             </div>
           </div>
         </div>
@@ -43,8 +45,8 @@ get_header();?>
       <center class="hidden-lg hidden-md hidden-sm">
         <div class="row imagetiles">
           <div class="col-md-2 col-sm-4 col-xs-6 box green">
-            <a href="<?php echo esc_url(home_url());?>">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/001-na.png';?>" class="img-responsive" width="80%;">
+            <a href="<?php echo site_ckan();?>/group/telekomunikasi">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-responsive" width="80%;">
               <label class="small">Telekomunikasi</label>
             </a>
           </div>
@@ -58,13 +60,13 @@ get_header();?>
       <div class="row imagetiles">
         <div class="col-md-2 col-sm-4 col-xs-6 box ">
           <a href="">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/002-na.png';?>" class="img-responsive" width="80%;">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="80%;">
             <label class="small">Internet</label>
           </a>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 box green">
           <a href="">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/004-na.png';?>" class="img-responsive" width="80%;">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="80%;">
             <label class="small">Penyiaran</label>
           </a>
         </div>
@@ -72,13 +74,13 @@ get_header();?>
       <div class="row imagetiles">
         <div class="col-md-2 col-sm-4 col-xs-6 box green">
           <a href="">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/005-na.png';?>" class="img-responsive" width="80%;">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="80%;">
             <label class="small">Sistem Elektronik</label>
           </a>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 box">
           <a href="">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/006-na.png';?>" class="img-responsive" width="80%;">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="80%;">
             <label class="small">Alat dan Perangkat</label>
           </a>
         </div>
@@ -89,13 +91,13 @@ get_header();?>
      <div class="row imagetiles">
       <div class="col-md-2 col-sm-4 col-xs-6 box ">
         <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/007.png';?>" class="img-responsive" width="80%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
           <label class="small">Frekuensi Radio</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6 box green">
         <a href="">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/008-n.png';?>" class="img-responsive" width="80%;">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
          <label class="small">E-commerce</label>
        </a>
      </div>
@@ -103,13 +105,13 @@ get_header();?>
    <div class="row imagetiles">
      <div class="col-md-2 col-sm-4 col-xs-6 box green">
        <a href="">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/009-na.png';?>" class="img-responsive" width="80%;">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
          <label class="small">E-government</label>
        </a>
      </div>
      <div class="col-md-2 col-sm-4 col-xs-6 box">
        <a href="">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/010-na.png';?>" class="img-responsive" width="80%;">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
          <label class="small">Domain</label>
        </a>
      </div>
@@ -117,7 +119,7 @@ get_header();?>
    <div class="row imagetiles">
      <div class="col-md-2 col-sm-4 col-xs-6 box">
        <a href="">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/011.png';?>" class="img-responsive" width="80%;">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
          <label class="small">Keamanan Informasi</label>
        </a>
      </div>
@@ -131,9 +133,9 @@ get_header();?>
   <div class="row imagetiles">
 
     <center class="hidden-xs">
-      <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo esc_url(home_url());?>">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/001-na.png';?>" class="img-responsive" width="70%;">
+      <div class="col-md-2 col-sm-4 col-xs-6 tombol-menu">
+        <a href="<?php echo site_ckan();?>/group/telekomunikasi">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-responsive" width="70%;">
           <label class="small">Telekomunikasi</label>
         </a>
       </div>
@@ -145,25 +147,25 @@ get_header();?>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/002-na.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="70%;">
           <label class="small">Internet</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/004-na.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="70%;">
           <label class="small">Penyiaran</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/005-na.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="70%;">
           <label class="small">Sistem Elektronik</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/006-na.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="70%;">
           <label class="small">Alat dan Perangkat</label>
         </a>
       </div>
@@ -178,35 +180,35 @@ get_header();?>
           <div class="col-md-2 col-sm-4 col-xs-6">
             <br>
             <a href="">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/007.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
               <label class="small">Frekuensi Radio</label>
             </a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
            <br>
            <a href="">
-             <img src="<?php echo get_template_directory_uri() .'/img/icon/008-n.png';?>" class="img-responsive" width="80%;">
+             <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
              <label class="small">E-commerce</label>
            </a>
          </div>
          <div class="col-md-2 col-sm-4 col-xs-6">
           <br>
           <a href="">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/009-na.png';?>" class="img-responsive" width="80%;">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
            <label class="small">E-government</label>
          </a>
        </div>
        <div class="col-md-2 col-sm-4 col-xs-6">
         <br>
         <a href="">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/010-na.png';?>" class="img-responsive" width="80%;">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
          <label class="small">Domain</label>
        </a>
      </div>
      <div class="col-md-2 col-sm-4 col-xs-6">
       <br>
       <a href="">
-       <img src="<?php echo get_template_directory_uri() .'/img/icon/011.png';?>" class="img-responsive" width="80%;">
+       <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
        <label class="small">Keamanan Informasi</label>
      </a>
    </div>
@@ -244,8 +246,8 @@ get_header();?>
 		</div>
 		<br>
 		<!-- Enjoy!-->
-
-<section>
+<!-- Grapik Ckan  -->
+<!-- <section>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -280,24 +282,12 @@ get_header();?>
  </div>
 </div>
 
-</section>
+</section> -->
 
 <section style="background: #6b7f9e; padding-top: 30px; padding-bottom: 30px;">
   <div class="container">
     <div class="row">
-
-
-
-
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri() .'/img/BAKOHUMAS-NEW.png';?>" class="img-responsive" width="100%;">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri() .'/img/bpptik-cikarang-slide.jpg';?>" class="img-responsive" width="100%;">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri() .'/img/STTM_0.png';?>" class="img-responsive" width="100%;" height="600px;">
-      </div>
+        <?php echo do_shortcode('[logo_carousel_slider]'); ?>
     </div>
   </div>
 </section>
@@ -308,31 +298,31 @@ get_header();?>
 		<!-- Created by Abdurohman-->
 		<script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
-			
+
 			//List of ckan urls API
-			var urlOrganizationList = 'http://202.89.117.149/api/3/action/organization_list?all_fields=true';
-			var urlGroupList = 'http://202.89.117.149/api/3/action/group_list?all_fields=true';
-			var urlFormatList = 'http://202.89.117.149/api/3/action/current_package_list_with_resources';
-			var urlTagList = 'http://202.89.117.149/api/3/action/tag_list?all_fields=true';
-			
+			var urlOrganizationList = '<?php echo site_ckan()?>/api/3/action/organization_list?all_fields=true';
+			var urlGroupList = '<?php echo site_ckan()?>/api/3/action/group_list?all_fields=true';
+			var urlFormatList = '<?php echo site_ckan()?>/api/3/action/current_package_list_with_resources';
+			var urlTagList = '<?php echo site_ckan()?>/api/3/action/tag_list?all_fields=true';
+
 			buildHeadline();		//Create headline
-			
+
 			//create chart one-by-one
-			buildChart(urlOrganizationList, 'bar', 'Dataset Each Organization', 'donutchart');
-			buildChart(urlGroupList, 'pie', 'Dataset Each Group', 'piechart_3d');
-			buildChart(urlFormatList, 'pie', 'Dataset Each Format', 'chart_lines');
-			buildChart(urlTagList, 'bar', 'Dataset Each Tag', 'chart_div');
-			
+			// buildChart(urlOrganizationList, 'bar', 'Dataset Each Organization', 'donutchart');
+			// buildChart(urlGroupList, 'pie', 'Dataset Each Group', 'piechart_3d');
+			// buildChart(urlFormatList, 'pie', 'Dataset Each Format', 'chart_lines');
+			// buildChart(urlTagList, 'bar', 'Dataset Each Tag', 'chart_div');
+
 			function buildHeadline(){
 				$.getJSON(urlFormatList, function(JSONData){		//Get json data
 					for(var i = 0; i < 5; i++)
 						addCkanHeadline(i, JSONData);		//Add 5 headline to the page
 				});
 			}
-			
+
 			function addCkanHeadline(i, JSONData){
 				//Prepare data for headline from json object
-				var base_url = 'http://202.89.117.149/';
+				var base_url = '<?php echo site_ckan()?>/';
 				var title = JSONData['result'][i]['title'];
 				var url = base_url+'dataset/'+JSONData['result'][i]['name'];
 				var subtitle = JSONData['result'][i]['notes'];
@@ -340,26 +330,26 @@ get_header();?>
 				var organization_url = base_url+'organization/'+JSONData['result'][i]['organization']['id'];
 				var date = JSONData['result'][i]['metadata_created'].substring(0,10);
 				var resources = '', tags = '';
-				
+
 				//Get all resources for the dataset
 				for(var j = 0; j < JSONData['result'][i]['resources'].length; j++){
 					var resource_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&res_format='+JSONData['result'][i]['resources'][j]['format'];
 					resources = resources.concat("<a href='"+resource_url+"'><strong>"+JSONData['result'][i]['resources'][j]['format']+'</strong></a> ');
 				}
-				
+
 				//Get all tags for the dataset
 				for(var k = 0; k < JSONData['result'][i]['tags'].length; k++){
 					var tag_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&tags='+JSONData['result'][i]['tags'][k]['name'];
 					tags = tags.concat("<a href='"+tag_url+"'>#"+JSONData['result'][i]['tags'][k]['display_name']+'</a> ');
 				}
-				
+
 				//Put headline to the page
 		    var item = document.createElement("div");
 				item.setAttribute("class", "post-preview");
 				item.innerHTML = '<a href="'+url+'"><h2 class="post-title">'+title+'</h2><br><h3 class="post-subtitle">'+subtitle+'</h3><br></a><p class="post-meta">'+resources+'<a href="'+organization_url+'" style="float:right">'+organization+'</a><br>'+tags+'<i style="float:right">Created: '+date+'</i></p><hr>';
 				$("#ckan-headline-box").append(item);
 			}
-			
+
 			function buildChart(url, type, subject, elementID){
 				$.getJSON(url, function(JSONData){
 		      google.charts.setOnLoadCallback(function(){
@@ -369,16 +359,16 @@ get_header();?>
 		          hAxis: {title: 'Datasets'},
 							pieSliceText: 'value'
 		        };
-						
+
 						//Chart type
 						if(type == 'pie')
 							var chart = new google.visualization.PieChart(document.getElementById(elementID));
 						else
 							var chart = new google.visualization.ColumnChart(document.getElementById(elementID));
-						
+
 						//Define data category
 						var dataArray = [[subject, 'Dataset']];
-						
+
 						//Build data for chart
 						if(url == urlFormatList){
 							var formatList = {};
@@ -389,24 +379,24 @@ get_header();?>
 									formatList[format] ? formatList[format] += 1 : formatList[format] = 1;
 								}
 							}
-				
+
 							for (var key in formatList)
 							  if (formatList.hasOwnProperty(key))
 									dataArray.push([key,  formatList[key]]);
-							
+
 						}
 						else if(url == urlTagList){
 							for(var i = 0; i < JSONData['result'].length ; i++){
 								var tagID = JSONData['result'][i]['id'];
-								var tagUrl = 'http://202.89.117.149/api/3/action/tag_show?id=' + tagID + '&include_datasets=true';
-							
+								var tagUrl = '<?php echo site_ckan()?>/api/3/action/tag_show?id=' + tagID + '&include_datasets=true';
+
 								$.getJSON(tagUrl, function(tagJSONData){
 									var key = tagJSONData['result']['name'];
 									var value = tagJSONData['result']['packages'].length;
 									dataArray.push([key,  value]);
 									if(dataArray.length == JSONData['result'].length +1){
 						        var data = google.visualization.arrayToDataTable(dataArray);
-			        
+
 							      chart.draw(data, options);
 									}
 								});
@@ -415,11 +405,11 @@ get_header();?>
 						else
 							for(var i = 0; i < JSONData['result'].length; i++)
 								dataArray.push([JSONData['result'][i]['name'],  JSONData['result'][i]['package_count']])
-												
-					
+
+
 		        var data = google.visualization.arrayToDataTable(dataArray);
-			      
-						if(url != urlTagList) 
+
+						if(url != urlTagList)
 			      	chart.draw(data, options);
 		      });
 				});
