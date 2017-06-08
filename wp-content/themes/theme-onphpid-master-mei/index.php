@@ -346,7 +346,7 @@ get_header();?>
 				//Put headline to the page
 		    var item = document.createElement("div");
 				item.setAttribute("class", "post-preview");
-				item.innerHTML = '<a href="'+url+'"><h2 class="post-title">'+title+'</h2><br><h3 class="post-subtitle">'+subtitle+'</h3><br></a><p class="post-meta">'+resources+'<a href="'+organization_url+'" style="float:right">'+organization+'</a><br>'+tags+'<i style="float:right">Created: '+date+'</i></p><hr>';
+				item.innerHTML = '<a href="'+url+'"><h2 class="post-title">'+title+'</h2></a><br><h5 class="post-subtitle">'+subtitle+'</h5><br><p class="post-meta">'+resources+'<a href="'+organization_url+'" style="float:right">'+organization+'</a><br>'+tags+'<i style="float:right">Created: '+date+'</i></p><hr>';
 				$("#ckan-headline-box").append(item);
 			}
 
