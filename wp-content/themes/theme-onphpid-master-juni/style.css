@@ -1,10 +1,10 @@
 /*
-Theme Name: Onphpid Themes mei
+Theme Name: Onphpid Themes juni
 Theme URI: http://www.onphpid.com/
 Author: onphpid atau tulis namamu
 Author URI: http://www.onphpid.com/
 Description: Belajar Membuat Theme WordPress untuk pemula
-Version: 1.0.0
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: onphpid-theme
@@ -800,7 +800,7 @@ input#submit:hover, input#submit:active {
 }
 .tags a{
   background-color:#a38018;
-  padding:7px; 
+  padding:7px;
   color:#fff;
   display:inline-block;
   font-size:11px;
@@ -824,7 +824,7 @@ input#submit:hover, input#submit:active {
 .fa-file-code-o {
   color: #0686a8;
 }
-.helvet {  
+.helvet {
   color: #fff;
   font-size: 70px;
   text-align: center;
