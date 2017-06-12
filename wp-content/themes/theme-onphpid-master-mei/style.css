@@ -10,9 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: onphpid-theme
 Tags:
 */
-
-
-/* global */
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 a,
 a:hover,
@@ -20,6 +19,37 @@ a:focus,
 a:visited {
   text-decoration: none;
 }
+body {
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  /*font-family: inherit;*/
+  vertical-align: baseline;
+}
+a {
+  color: #fab915;
+  text-decoration: none;
+}
+a.hover {
+  color: #fff;
+  text-decoration: none;
+}
+* { color:#000; text-decoration: none;}
 
 
 /* header
@@ -179,6 +209,7 @@ label {
   color: #6b7f9e;
 }
 .small {
+  font-family: "arial";
   font-size: 14px;
   padding-top: 10px;
   text-align: center;
@@ -322,7 +353,9 @@ label {
 
 /* footer
 ======================*/
-
+.footer {
+  background: #fff;
+}
 .copy-right {
   font-size: 12px;
 }
@@ -712,3 +745,89 @@ input#submit:hover, input#submit:active {
     left: 0;
     z-index: 999;
   }
+
+
+  .post-preview {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    padding: 2%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    box-shadow:0px 10px 25px -5px rgba(0,0,0,0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .post-title {
+    color: #333;
+    font-family: sans-serif, arial;
+    font-size: 20px;
+  }
+  .badge {
+   display: inline-block;
+   font-size: 12px;
+   background: #009688;
+   float: right;
+   padding: 7px;
+   border-radius: 0px;
+   margin-top: -6px;
+ }
+ .item{
+  color:#48453d;
+  margin-top:0px;
+  overflow:hidden;
+}
+.block-title{
+  color: #48453d;
+  margin-bottom:0px;
+  font-size:18px;
+  margin-top: 0px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.item-content-block{
+  padding-top:5px;
+  border-top:2px solid #f6f6f2;
+  background-color:#FFF;
+  display:block;
+}
+.tags a{
+  background-color:#a38018;
+  padding:7px; 
+  color:#fff;
+  display:inline-block;
+  font-size:11px;
+  text-transform:uppercase;
+  line-height:11px;
+  border-radius:2px;
+  margin-bottom:5px;
+  margin-right:2px;
+  text-decoration:none;
+}
+.tags a:hover{
+  background-color:#756f5d;
+}
+
+.date {
+  font-size: 12px;
+  color: #949494;
+  font-style: italic;
+}
+
+.fa-file-code-o {
+  color: #0686a8;
+}
+.helvet {  
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+ font-family: 'Tangerine';
+ text-shadow: -2px -2px 5px #aaa;
+}

@@ -1,5 +1,5 @@
 <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -29,7 +29,8 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Kominfo-2017</p>
+                    <br/>
+                    <p class="copyright text-muted" style="color: #333;">Copyright &copy; Kominfo-2017</p>
                 </div>
             </div>
         </div>
