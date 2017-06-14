@@ -4,8 +4,8 @@ get_header();?>
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 <div class="jumbotron" style="background-color: #fff; border: none; padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
-  <div class="jumbotron" style="background-color: #ccc;border: none; padding-top: 0px; padding-bottom: 30px; margin-bottom: 0px;">
-    <header class="jumbotron" style="background-color: #4679B2;">
+  <div class="jumbotron" style="background-color: #9EA3A8;border: none; padding-top: 0px; padding-bottom: 30px; margin-bottom: 0px;">
+    <header class="jumbotron" style="background-color: #0166FE;">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
@@ -225,7 +225,7 @@ get_header();?>
 </div>
 
 
-<section class="jumbotron" style="background: #6b7f9e;">
+<section class="jumbotron" style="background: #0166FE;">
   <div class="container">
     <div class="row">
 
@@ -286,7 +286,7 @@ get_header();?>
 
 </section> -->
 
-<section style="background: #6b7f9e; padding-top: 30px; padding-bottom: 30px;">
+<section style="background: #0166FE; padding-top: 30px; padding-bottom: 30px;">
   <div class="container">
     <div class="row">
       <?php echo do_shortcode('[logo_carousel_slider]'); ?>
