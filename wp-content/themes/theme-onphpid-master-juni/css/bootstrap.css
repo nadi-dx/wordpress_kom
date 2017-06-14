@@ -6769,7 +6769,7 @@ button.close {
     border-radius: 50%;
     width: 70%;
 }
-img .button-img:hover,
-img .button-img:focus{
+.button-img:hover,
+.button-img:focus{
   background-color: #9EA3A8;
 }
