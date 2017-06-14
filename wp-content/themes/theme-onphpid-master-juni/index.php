@@ -52,7 +52,7 @@ get_header();?>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6 box">
             <a href="<?php echo site_ckan();?>/group/pos">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="button-img img-responsive" width="80%;">
               <label class="small">Pos</label>
             </a>
           </div>
@@ -60,13 +60,13 @@ get_header();?>
         <div class="row imagetiles">
           <div class="col-md-2 col-sm-4 col-xs-6 box ">
             <a href="<?php echo site_ckan();?>/group/internet">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="button-img img-responsive" width="80%;">
               <label class="small">Internet</label>
             </a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6 box green">
             <a href="<?php echo site_ckan();?>/group/penyiaran">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="button-img img-responsive" width="80%;">
               <label class="small">Penyiaran</label>
             </a>
           </div>
@@ -74,13 +74,13 @@ get_header();?>
         <div class="row imagetiles">
           <div class="col-md-2 col-sm-4 col-xs-6 box green">
             <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="button-img img-responsive" width="80%;">
               <label class="small">Sistem Elektronik</label>
             </a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6 box">
             <a href="<?php echo site_ckan();?>/group/alat-dan-perangkat">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="button-img img-responsive" width="80%;">
               <label class="small">Alat dan Perangkat</label>
             </a>
           </div>
@@ -91,13 +91,13 @@ get_header();?>
        <div class="row imagetiles">
         <div class="col-md-2 col-sm-4 col-xs-6 box ">
           <a href="<?php echo site_ckan();?>/group/frekuensi-radio">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="button-img img-responsive" width="80%;">
             <label class="small">Frekuensi Radio</label>
           </a>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 box green">
           <a href="<?php echo site_ckan();?>/group/e-commerce">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="button-img img-responsive" width="80%;">
            <label class="small">E-commerce</label>
          </a>
        </div>
@@ -105,13 +105,13 @@ get_header();?>
      <div class="row imagetiles">
        <div class="col-md-2 col-sm-4 col-xs-6 box green">
          <a href="<?php echo site_ckan();?>/group/e-government">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="button-img img-responsive" width="80%;">
            <label class="small">E-government</label>
          </a>
        </div>
        <div class="col-md-2 col-sm-4 col-xs-6 box">
          <a href="<?php echo site_ckan();?>/group/domain">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="button-img img-responsive" width="80%;">
            <label class="small">Domain</label>
          </a>
        </div>
@@ -119,7 +119,7 @@ get_header();?>
      <div class="row imagetiles">
        <div class="col-md-2 col-sm-4 col-xs-6 box">
          <a href="<?php echo site_ckan();?>/group/keamanan-informasi">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="button-img img-responsive" width="80%;">
            <label class="small">Keamanan Informasi</label>
          </a>
        </div>
@@ -141,31 +141,31 @@ get_header();?>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/pos">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="button-img img-responsive" width="70%;">
           <label class="small">Pos</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/internet">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="button-img img-responsive" width="70%;">
           <label class="small">Internet</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/penyiaran">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="button-img img-responsive" width="70%;">
           <label class="small">Penyiaran</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="button-img img-responsive" width="70%;">
           <label class="small">Sistem Elektronik</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/alat-dan-perangkat">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="button-img img-responsive" width="70%;">
           <label class="small">Alat dan Perangkat</label>
         </a>
       </div>
@@ -177,38 +177,38 @@ get_header();?>
     <div class="row" style="margin-top: 40px; margin-left: 40px;">
       <div class="col-md-offset-1">
         <center class="hidden-xs">
-          <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="col-md-2 col-sm-4 col-xs-6 tombol-menu">
             <br>
             <a href="<?php echo site_ckan();?>/group/frekuensi-radio">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="button-img img-responsive" width="70%;">
               <label class="small">Frekuensi Radio</label>
             </a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
            <br>
            <a href="<?php echo site_ckan();?>/group/e-commerce">
-             <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
+             <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="button-img img-responsive" width="80%;">
              <label class="small">E-commerce</label>
            </a>
          </div>
          <div class="col-md-2 col-sm-4 col-xs-6">
           <br>
           <a href="<?php echo site_ckan();?>/group/e-government">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="button-img img-responsive" width="80%;">
            <label class="small">E-government</label>
          </a>
        </div>
        <div class="col-md-2 col-sm-4 col-xs-6">
         <br>
         <a href="<?php echo site_ckan();?>/group/domain">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="button-img img-responsive" width="80%;">
          <label class="small">Domain</label>
        </a>
      </div>
      <div class="col-md-2 col-sm-4 col-xs-6">
       <br>
       <a href="<?php echo site_ckan();?>/group/kemamanan-informasi">
-       <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
+       <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="button-img img-responsive" width="80%;">
        <label class="small">Keamanan Informasi</label>
      </a>
    </div>
