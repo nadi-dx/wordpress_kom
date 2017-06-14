@@ -53,7 +53,7 @@ body {
 .e {
   transform: rotateY(240deg) translateZ(250px);
   background: #630460;
-} 
+}
 .f {
   transform: rotateY(300deg) translateZ(250px);
   background: #8c6239;
@@ -78,3 +78,9 @@ body {
 }
 .next { right: 5em; }
 .prev { left: 5em; }
+
+.button-img{
+    background-color: #0166FE;
+    border-radius: 50%;
+    width: 70%;
+}

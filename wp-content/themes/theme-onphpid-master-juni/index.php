@@ -46,7 +46,7 @@ get_header();?>
         <div class="row imagetiles">
           <div class="col-md-2 col-sm-4 col-xs-6 box green">
             <a href="<?php echo site_ckan();?>/group/telekomunikasi">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-responsive" width="80%;">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-circle img-responsive" width="80%"; style="background-color: #0166FE; ">
               <label class="small">Telekomunikasi</label>
             </a>
           </div>
@@ -135,7 +135,7 @@ get_header();?>
     <center class="hidden-xs">
       <div class="col-md-2 col-sm-4 col-xs-6 tombol-menu">
         <a href="<?php echo site_ckan();?>/group/telekomunikasi">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-responsive" width="70%;">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="button-img img-responsive" width="70%">
           <label class="small">Telekomunikasi</label>
         </a>
       </div>
