@@ -4,174 +4,127 @@ get_header();?>
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 <div class="jumbotron" style="background-color: #fff; border: none; padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
-  <div class="jumbotron" style="background-color: #9EA3A8;border: none; padding-top: 0px; padding-bottom: 30px; margin-bottom: 0px;">
-    <header class="jumbotron" style="background-color: #0166FE;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-            <div class="site-heading" >
-              <h2 class="helvet"><?php bloginfo('name');?></h2>
-              <hr class="small">
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+
+  <section class="hero bg-light-grey">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="site-heading" >
-            <h5 style="color: #fff; text-align: center;"></h5>
-            <div class="input-group">
-              <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
-              <form action="functions.php" method="post">
-                <input type="text" class="form-control" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
-              </form>
+      <div class="col-md-12">
+        <div class="row">
+       <!--    <div class="hero-content center-row-sm text-center">
+            <h1 class="hero-title" style="color: #fff; font-size: 3em;"></h1>
+            <div class="hero-box">
+              <p class="h4">Pendidikan karakter dengan pembiasaan karakter kebersihan, respek, disiplin, daya juang.</p>
             </div>
+          </div> -->
+
+
+          <div class="title-hd"><?php bloginfo('name');?></div>
+          <div class="order-process-step2">
+            <div class="container frontend">
+              <div class="clearfix"></div>
+              <div class="block process-block2">
+                <div class="row text-center">
+                  <ol class="process2">
+                    <li class="col-md-4 col-sm-6 col-xs-6"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                      <div class="col-padding">
+                        <strong>87 milyar</strong> 
+                        <h4>Data Group</h4>
+                      </div>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-money"></i>
+                     <div class="col-padding">
+                      <strong>34,000+</strong> 
+                      <h4>Data Organisasi</h4>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-sellsy"></i>
+                   <div class="col-padding">
+                    <strong>97,3%</strong>
+                    <h4>pembayaran tepat waktu</h4>
+                  </div>
+                </li>
+
+              </ol>
+            </div>
+
+            <div class="clearfix"></div>
           </div>
+          <div class="clearfix"></div>
         </div>
       </div>
+
     </div>
   </div>
-
-  <section style="padding:40px;
-  background-image: url('img/back3.png');
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  ">
-  <div class="main">
-    <div class="row">
-
-      <center class="hidden-lg hidden-md hidden-sm">
-        <div class="row imagetiles">
-          <div class="col-md-2 col-sm-4 col-xs-6 box green">
-            <a href="<?php echo site_ckan();?>/group/telekomunikasi">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-circle img-responsive" width="80%"; style="background-color: #0166FE; ">
-              <label class="small">Telekomunikasi</label>
-            </a>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 box">
-            <a href="<?php echo site_ckan();?>/group/pos">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="img-responsive" width="80%;">
-              <label class="small">Pos</label>
-            </a>
-          </div>
-        </div>
-        <div class="row imagetiles">
-          <div class="col-md-2 col-sm-4 col-xs-6 box ">
-            <a href="<?php echo site_ckan();?>/group/internet">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="80%;">
-              <label class="small">Internet</label>
-            </a>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 box green">
-            <a href="<?php echo site_ckan();?>/group/penyiaran">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="80%;">
-              <label class="small">Penyiaran</label>
-            </a>
-          </div>
-        </div>
-        <div class="row imagetiles">
-          <div class="col-md-2 col-sm-4 col-xs-6 box green">
-            <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="80%;">
-              <label class="small">Sistem Elektronik</label>
-            </a>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 box">
-            <a href="<?php echo site_ckan();?>/group/alat-dan-perangkat">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="80%;">
-              <label class="small">Alat dan Perangkat</label>
-            </a>
-          </div>
-        </div>
-      </center>
-
-      <center class="hidden-lg hidden-md hidden-sm">
-       <div class="row imagetiles">
-        <div class="col-md-2 col-sm-4 col-xs-6 box ">
-          <a href="<?php echo site_ckan();?>/group/frekuensi-radio">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
-            <label class="small">Frekuensi Radio</label>
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 box green">
-          <a href="<?php echo site_ckan();?>/group/e-commerce">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
-           <label class="small">E-commerce</label>
-         </a>
-       </div>
-     </div>
-     <div class="row imagetiles">
-       <div class="col-md-2 col-sm-4 col-xs-6 box green">
-         <a href="<?php echo site_ckan();?>/group/e-government">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
-           <label class="small">E-government</label>
-         </a>
-       </div>
-       <div class="col-md-2 col-sm-4 col-xs-6 box">
-         <a href="<?php echo site_ckan();?>/group/domain">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
-           <label class="small">Domain</label>
-         </a>
-       </div>
-     </div>
-     <div class="row imagetiles">
-       <div class="col-md-2 col-sm-4 col-xs-6 box">
-         <a href="<?php echo site_ckan();?>/group/keamanan-informasi">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
-           <label class="small">Keamanan Informasi</label>
-         </a>
-       </div>
-     </div>
-   </center>
-
- </div>
 </div>
+</section>
 
-<div class="container main" style="margin-top: 30px;">
-  <div class="row imagetiles">
 
-    <center class="hidden-xs">
-      <div class="col-md-2 col-sm-4 col-xs-6 tombol-menu">
+<div class="container">
+  <div class="row">
+
+
+   <div class="row imagetiles">
+    <div class="black">
+      <div class="col-md-12">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <h1><i class="ion ion-arrow-down-c"></i></h1>
+          <div id="custom-search-input">
+            <div class="input-group col-md-12">
+              <form action="functions.php" method="post">
+                <input type="text" class="form-control input-lg" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
+              </form>
+              <span class="input-group-btn"  aria-hidden="true">
+                <button class="btn btn-info btn-lg" type="button">
+                 <img src="<?php echo get_template_directory_uri() .'/img/search2.png';?>">
+               </button>
+             </span>
+           </div>
+         </div>
+       </div>
+     </div>
+     <br><br><hr>
+     <center class="hidden-xs">
+       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/telekomunikasi">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="button-img img-responsive" width="70%">
-          <label class="small">Telekomunikasi</label>
+        <div class="product1">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;">
+            <label class="small">Telekomunikasi</label>
+          </div>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/pos">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="img-responsive" width="70%;">
-          <label class="small">Pos</label>
+        <a href="">
+          <div class="product2">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
+            <label class="small">Pos</label>
+          </div>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/internet">
+        <a href="">
           <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="70%;">
           <label class="small">Internet</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/penyiaran">
+        <a href="">
           <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="70%;">
           <label class="small">Penyiaran</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
+        <a href="">
           <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="70%;">
           <label class="small">Sistem Elektronik</label>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/alat-dan-perangkat">
+        <a href="">
           <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="70%;">
           <label class="small">Alat dan Perangkat</label>
         </a>
       </div>
     </center>
 
-    <br>
 
 
     <div class="row" style="margin-top: 40px; margin-left: 40px;">
@@ -179,35 +132,35 @@ get_header();?>
         <center class="hidden-xs">
           <div class="col-md-2 col-sm-4 col-xs-6">
             <br>
-            <a href="<?php echo site_ckan();?>/group/frekuensi-radio">
+            <a href="">
               <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
               <label class="small">Frekuensi Radio</label>
             </a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
            <br>
-           <a href="<?php echo site_ckan();?>/group/e-commerce">
+           <a href="">
              <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
              <label class="small">E-commerce</label>
            </a>
          </div>
          <div class="col-md-2 col-sm-4 col-xs-6">
           <br>
-          <a href="<?php echo site_ckan();?>/group/e-government">
+          <a href="">
            <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
            <label class="small">E-government</label>
          </a>
        </div>
        <div class="col-md-2 col-sm-4 col-xs-6">
         <br>
-        <a href="<?php echo site_ckan();?>/group/domain">
+        <a href="">
          <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
          <label class="small">Domain</label>
        </a>
      </div>
      <div class="col-md-2 col-sm-4 col-xs-6">
       <br>
-      <a href="<?php echo site_ckan();?>/group/kemamanan-informasi">
+      <a href="">
        <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
        <label class="small">Keamanan Informasi</label>
      </a>
@@ -218,14 +171,111 @@ get_header();?>
 
 
 </div>
+
 </div>
+</div>
+</div> 
+</div>
+
+
+<section style="padding:40px;">
+  <div class="main">
+    <div class="row">
+      <center class="hidden-lg hidden-md hidden-sm">
+        <div class="row imagetiles">
+          <div class="col-md-2 col-sm-4 col-xs-6 box">
+            <a href="<?php echo site_ckan();?>/group/telekomunikasi">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/telekomunikasi.png';?>" class="img-responsive" width="80%;">
+              <label class="small">Telekomunikasi</label>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box">
+            <a href="">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/pos.png';?>" class="img-responsive" width="80%;">
+              <label class="small">Pos</label>
+            </a>
+          </div>
+        </div>
+        <div class="row imagetiles">
+          <div class="col-md-2 col-sm-4 col-xs-6 box ">
+            <a href="">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="80%;">
+              <label class="small">Internet</label>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box green">
+            <a href="">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="80%;">
+              <label class="small">Penyiaran</label>
+            </a>
+          </div>
+        </div>
+        <div class="row imagetiles">
+          <div class="col-md-2 col-sm-4 col-xs-6 box green">
+            <a href="">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="80%;">
+              <label class="small">Sistem Elektronik</label>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box">
+            <a href="">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="80%;">
+              <label class="small">Alat dan Perangkat</label>
+            </a>
+          </div>
+        </div>
+      </center>
+
+      <center class="hidden-lg hidden-md hidden-sm">
+       <div class="row imagetiles">
+        <div class="col-md-2 col-sm-4 col-xs-6 box ">
+          <a href="">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
+            <label class="small">Frekuensi Radio</label>
+          </a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 box green">
+          <a href="">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
+           <label class="small">E-commerce</label>
+         </a>
+       </div>
+     </div>
+     <div class="row imagetiles">
+       <div class="col-md-2 col-sm-4 col-xs-6 box green">
+         <a href="">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
+           <label class="small">E-government</label>
+         </a>
+       </div>
+       <div class="col-md-2 col-sm-4 col-xs-6 box">
+         <a href="">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
+           <label class="small">Domain</label>
+         </a>
+       </div>
+     </div>
+     <div class="row imagetiles">
+       <div class="col-md-2 col-sm-4 col-xs-6 box">
+         <a href="">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
+           <label class="small">Keamanan Informasi</label>
+         </a>
+       </div>
+     </div>
+   </center>
+
+ </div>
+</div>
+
+
 </section>
 
 
 </div>
 
 
-<section class="jumbotron" style="background: #0166FE;">
+<section class="jumbotron" style="background: #6b7f9e;">
   <div class="container">
     <div class="row">
 
@@ -286,7 +336,7 @@ get_header();?>
 
 </section> -->
 
-<section style="background: #0166FE; padding-top: 30px; padding-bottom: 30px;">
+<section style="background: #6b7f9e; padding-top: 30px; padding-bottom: 30px;">
   <div class="container">
     <div class="row">
       <?php echo do_shortcode('[logo_carousel_slider]'); ?>
@@ -301,55 +351,55 @@ get_footer();?>
 <script type="text/javascript">
   google.charts.load('current', {'packages':['corechart']});
 
-			//List of ckan urls API
-			var urlOrganizationList = '<?php echo site_ckan()?>/api/3/action/organization_list?all_fields=true';
-			var urlGroupList = '<?php echo site_ckan()?>/api/3/action/group_list?all_fields=true';
-			var urlFormatList = '<?php echo site_ckan()?>/api/3/action/current_package_list_with_resources';
-			var urlTagList = '<?php echo site_ckan()?>/api/3/action/tag_list?all_fields=true';
+      //List of ckan urls API
+      var urlOrganizationList = '<?php echo site_ckan()?>/api/3/action/organization_list?all_fields=true';
+      var urlGroupList = '<?php echo site_ckan()?>/api/3/action/group_list?all_fields=true';
+      var urlFormatList = '<?php echo site_ckan()?>/api/3/action/current_package_list_with_resources';
+      var urlTagList = '<?php echo site_ckan()?>/api/3/action/tag_list?all_fields=true';
 
-			buildHeadline();		//Create headline
+      buildHeadline();    //Create headline
 
-			//create chart one-by-one
-			// buildChart(urlOrganizationList, 'bar', 'Dataset Each Organization', 'donutchart');
-			// buildChart(urlGroupList, 'pie', 'Dataset Each Group', 'piechart_3d');
-			// buildChart(urlFormatList, 'pie', 'Dataset Each Format', 'chart_lines');
-			// buildChart(urlTagList, 'bar', 'Dataset Each Tag', 'chart_div');
+      //create chart one-by-one
+      // buildChart(urlOrganizationList, 'bar', 'Dataset Each Organization', 'donutchart');
+      // buildChart(urlGroupList, 'pie', 'Dataset Each Group', 'piechart_3d');
+      // buildChart(urlFormatList, 'pie', 'Dataset Each Format', 'chart_lines');
+      // buildChart(urlTagList, 'bar', 'Dataset Each Tag', 'chart_div');
 
-			function buildHeadline(){
-				$.getJSON(urlFormatList, function(JSONData){		//Get json data
-					for(var i = 0; i < 6; i++)
-						addCkanHeadline(i, JSONData);		//Add 5 headline to the page
-				});
-			}
+      function buildHeadline(){
+        $.getJSON(urlFormatList, function(JSONData){    //Get json data
+          for(var i = 0; i < 5; i++)
+            addCkanHeadline(i, JSONData);   //Add 5 headline to the page
+        });
+      }
 
-			function addCkanHeadline(i, JSONData){
-				//Prepare data for headline from json object
-				var base_url = '<?php echo site_ckan()?>/';
-				var title = JSONData['result'][i]['title'];
-				var url = base_url+'dataset/'+JSONData['result'][i]['name'];
-				var subtitle = JSONData['result'][i]['notes'];
-				var organization = JSONData['result'][i]['organization']['title'];
-				var organization_url = base_url+'organization/'+JSONData['result'][i]['organization']['id'];
-				var date = JSONData['result'][i]['metadata_created'].substring(0,10);
-				var resources = '', tags = '';
+      function addCkanHeadline(i, JSONData){
+        //Prepare data for headline from json object
+        var base_url = '<?php echo site_ckan()?>/';
+        var title = JSONData['result'][i]['title'];
+        var url = base_url+'dataset/'+JSONData['result'][i]['name'];
+        var subtitle = JSONData['result'][i]['notes'];
+        var organization = JSONData['result'][i]['organization']['title'];
+        var organization_url = base_url+'organization/'+JSONData['result'][i]['organization']['id'];
+        var date = JSONData['result'][i]['metadata_created'].substring(0,10);
+        var resources = '', tags = '';
 
-				//Get all resources for the dataset
-				for(var j = 0; j < JSONData['result'][i]['resources'].length; j++){
-					var resource_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&res_format='+JSONData['result'][i]['resources'][j]['format'];
-					resources = resources.concat("<a href='"+resource_url+"'><strong>"+JSONData['result'][i]['resources'][j]['format']+'</strong></a> ');
-				}
+        //Get all resources for the dataset
+        for(var j = 0; j < JSONData['result'][i]['resources'].length; j++){
+          var resource_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&res_format='+JSONData['result'][i]['resources'][j]['format'];
+          resources = resources.concat("<a href='"+resource_url+"'><strong>"+JSONData['result'][i]['resources'][j]['format']+'</strong></a> ');
+        }
 
-				//Get all tags for the dataset
-				for(var k = 0; k < JSONData['result'][i]['tags'].length; k++){
-					var tag_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&tags='+JSONData['result'][i]['tags'][k]['name'];
-					tags = tags.concat("<a href='"+tag_url+"'>#"+JSONData['result'][i]['tags'][k]['display_name']+'</a> ');
-				}
+        //Get all tags for the dataset
+        for(var k = 0; k < JSONData['result'][i]['tags'].length; k++){
+          var tag_url = base_url+'dataset?organization='+JSONData['result'][i]['organization']['name']+'&&tags='+JSONData['result'][i]['tags'][k]['name'];
+          tags = tags.concat("<a href='"+tag_url+"'>#"+JSONData['result'][i]['tags'][k]['display_name']+'</a> ');
+        }
 
-				//Put headline to the page
-        var item =
+        //Put headline to the page
+        var item = 
         document.createElement("div");
         item.setAttribute("class", "col-md-6");
-        item.innerHTML =
+        item.innerHTML = 
         '<div class="post-preview"><div class="row "> <div class="col-md-12"> <a href="'
         +url+'"><h2 class="post-title">'
         +title+'</h2></a><br><h6 class="post-subtitle">'
@@ -365,34 +415,34 @@ get_footer();?>
       function buildChart(url, type, subject, elementID){
         $.getJSON(url, function(JSONData){
           google.charts.setOnLoadCallback(function(){
-						//Chart option
+            //Chart option
             var options = {
               title: subject,
               hAxis: {title: 'Datasets'},
               pieSliceText: 'value'
             };
 
-						//Chart type
-						if(type == 'pie')
-							var chart = new google.visualization.PieChart(document.getElementById(elementID));
-						else
-							var chart = new google.visualization.ColumnChart(document.getElementById(elementID));
+            //Chart type
+            if(type == 'pie')
+              var chart = new google.visualization.PieChart(document.getElementById(elementID));
+            else
+              var chart = new google.visualization.ColumnChart(document.getElementById(elementID));
 
-						//Define data category
-						var dataArray = [[subject, 'Dataset']];
+            //Define data category
+            var dataArray = [[subject, 'Dataset']];
 
-						//Build data for chart
-						if(url == urlFormatList){
-							var formatList = {};
-							for(var i = 0; i < JSONData['result'].length; i++){
-								var format = '';
-								if(JSONData['result'][i]['resources'].length > 0){
-									format = JSONData['result'][i]['resources'][0]['format'];
-									formatList[format] ? formatList[format] += 1 : formatList[format] = 1;
-								}
-							}
+            //Build data for chart
+            if(url == urlFormatList){
+              var formatList = {};
+              for(var i = 0; i < JSONData['result'].length; i++){
+                var format = '';
+                if(JSONData['result'][i]['resources'].length > 0){
+                  format = JSONData['result'][i]['resources'][0]['format'];
+                  formatList[format] ? formatList[format] += 1 : formatList[format] = 1;
+                }
+              }
 
-							for (var key in formatList)
+              for (var key in formatList)
                if (formatList.hasOwnProperty(key))
                  dataArray.push([key,  formatList[key]]);
 
