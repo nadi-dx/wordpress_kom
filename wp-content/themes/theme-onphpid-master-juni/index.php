@@ -24,19 +24,19 @@ get_header();?>
               <div class="block process-block2">
                 <div class="row text-center">
                   <ol class="process2">
-                    <li class="col-md-4 col-sm-6 col-xs-6"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                    <li class="col-md-4 col-sm-6 col-xs-6"><i class="glyphicon glyphicon-tags" aria-hidden="true"></i>
                       <div class="col-padding">
                         <strong>120+</strong>
                         <h4>Tag</h4>
                       </div>
                     </li>
-                    <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-money"></i>
+                    <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-line-chart"></i>
                      <div class="col-padding">
                       <strong>34,000+</strong>
                       <h4>Dataset</h4>
                     </div>
                   </li>
-                  <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-sellsy"></i>
+                  <li class="col-md-4 col-sm-6 col-xs-6"> <i class="glyphicon glyphicon-home"></i>
                    <div class="col-padding">
                     <strong>55</strong>
                     <h4>Organisasi</h4>
@@ -177,7 +177,7 @@ get_header();?>
      </div>
      <div class="col-md-2 col-sm-4 col-xs-6">
       <!-- <br> -->
-      <a href="<?php echo site_ckan();?>/group/keamanan-informatika">
+      <a href="<?php echo site_ckan();?>/group/keamanan-informasi">
         <div class="product2">
        <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/keamanan.png';?>" class="img-responsive" width="85%;">
        <label class="small">Keamanan Informasi</label>
