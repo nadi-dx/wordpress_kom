@@ -26,20 +26,20 @@ get_header();?>
                   <ol class="process2">
                     <li class="col-md-4 col-sm-6 col-xs-6"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
                       <div class="col-padding">
-                        <strong>87 milyar</strong> 
-                        <h4>Data Group</h4>
+                        <strong>120+</strong>
+                        <h4>Tag</h4>
                       </div>
                     </li>
                     <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-money"></i>
                      <div class="col-padding">
-                      <strong>34,000+</strong> 
-                      <h4>Data Organisasi</h4>
+                      <strong>34,000+</strong>
+                      <h4>Dataset</h4>
                     </div>
                   </li>
                   <li class="col-md-4 col-sm-6 col-xs-6"> <i class="fa fa-sellsy"></i>
                    <div class="col-padding">
-                    <strong>97,3%</strong>
-                    <h4>pembayaran tepat waktu</h4>
+                    <strong>55</strong>
+                    <h4>Organisasi</h4>
                   </div>
                 </li>
 
@@ -83,6 +83,7 @@ get_header();?>
      </div>
      <br><br><hr>
      <center class="hidden-xs">
+       <div class="row">
        <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/telekomunikasi">
         <div class="product1">
@@ -92,7 +93,7 @@ get_header();?>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="">
+        <a href="<?php echo site_ckan();?>/group/pos">
           <div class="product2">
             <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
             <label class="small">Pos</label>
@@ -100,29 +101,38 @@ get_header();?>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/internet.png';?>" class="img-responsive" width="70%;">
+        <a href="<?php echo site_ckan();?>/group/internet">
+          <div class="product1">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/internet.png';?>" class="img-responsive" width="100%;">
           <label class="small">Internet</label>
+        </div>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/penyiaran.png';?>" class="img-responsive" width="70%;">
+        <a href="<?php echo site_ckan();?>/group/penyiaran">
+          <div class="product2">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/penyiaran.png';?>" class="img-responsive" width="100%;">
           <label class="small">Penyiaran</label>
+        </div>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/sistem.png';?>" class="img-responsive" width="70%;">
+        <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
+          <div class="product1">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/sistem.png';?>" class="img-responsive" width="100%;">
           <label class="small">Sistem Elektronik</label>
+        </div>
         </a>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/alat.png';?>" class="img-responsive" width="70%;">
-          <label class="small">Alat dan Perangkat</label>
+        <a href="<?php echo site_ckan();?>/group/alat-dan-perangkat">
+          <div class="product2">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/alat.png';?>" class="img-responsive" width="85%;">
+          <label class="small">Perangkat Komunikasi</label>
+        </div>
         </a>
       </div>
+    </div>
     </center>
 
 
@@ -131,38 +141,47 @@ get_header();?>
       <div class="col-md-offset-1">
         <center class="hidden-xs">
           <div class="col-md-2 col-sm-4 col-xs-6">
-            <br>
-            <a href="">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/radio.png';?>" class="img-responsive" width="80%;">
+            <a href="<?php echo site_ckan();?>/group/frekuensi-radio">
+              <div class="product2">
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/radio.png';?>" class="img-responsive" width="85%;">
               <label class="small">Frekuensi Radio</label>
+            </div>
             </a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
-           <br>
-           <a href="">
-             <img src="<?php echo get_template_directory_uri() .'/img/icon/e-commerce.png';?>" class="img-responsive" width="80%;">
+           <!-- <br> -->
+           <a href="<?php echo site_ckan();?>/group/e-commerce">
+             <div class="product1">
+             <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/e-commerce.png';?>" class="img-responsive" width="100%;">
              <label class="small">E-commerce</label>
+           </div>
            </a>
          </div>
          <div class="col-md-2 col-sm-4 col-xs-6">
-          <br>
-          <a href="">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/e-gov.png';?>" class="img-responsive" width="80%;">
+          <!-- <br> -->
+          <a href="<?php echo site_ckan();?>/group/e-government">
+            <div class="product2">
+           <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/e-gov.png';?>" class="img-responsive" width="100%;">
            <label class="small">E-government</label>
+         </div>
          </a>
        </div>
        <div class="col-md-2 col-sm-4 col-xs-6">
-        <br>
-        <a href="">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/domain.png';?>" class="img-responsive" width="80%;">
+        <!-- <br> -->
+        <a href="<?php echo site_ckan();?>/group/domain">
+          <div class="product1">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/domain.png';?>" class="img-responsive" width="100%;">
          <label class="small">Domain</label>
+          </div>
        </a>
      </div>
      <div class="col-md-2 col-sm-4 col-xs-6">
-      <br>
-      <a href="">
-       <img src="<?php echo get_template_directory_uri() .'/img/icon/keamanan.png';?>" class="img-responsive" width="80%;">
+      <!-- <br> -->
+      <a href="<?php echo site_ckan();?>/group/keamanan-informatika">
+        <div class="product2">
+       <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/keamanan.png';?>" class="img-responsive" width="85%;">
        <label class="small">Keamanan Informasi</label>
+     </div>
      </a>
    </div>
  </center>
@@ -174,7 +193,7 @@ get_header();?>
 
 </div>
 </div>
-</div> 
+</div>
 </div>
 
 
@@ -367,7 +386,7 @@ get_footer();?>
 
       function buildHeadline(){
         $.getJSON(urlFormatList, function(JSONData){    //Get json data
-          for(var i = 0; i < 5; i++)
+          for(var i = 0; i < 6; i++)
             addCkanHeadline(i, JSONData);   //Add 5 headline to the page
         });
       }
@@ -396,10 +415,10 @@ get_footer();?>
         }
 
         //Put headline to the page
-        var item = 
+        var item =
         document.createElement("div");
         item.setAttribute("class", "col-md-6");
-        item.innerHTML = 
+        item.innerHTML =
         '<div class="post-preview"><div class="row "> <div class="col-md-12"> <a href="'
         +url+'"><h2 class="post-title">'
         +title+'</h2></a><br><h6 class="post-subtitle">'

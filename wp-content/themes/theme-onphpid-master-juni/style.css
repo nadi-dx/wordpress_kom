@@ -100,9 +100,10 @@ a.hover {
 ============================*/
 .title-hd {
  font-family: 'Playfair Display', serif;
- color:#fff; 
+ color:#fff;
+ text-align: center;
  /*text-align:center;*/
- margin-top:40px; 
+ margin-top:40px;
  font-size:50px;
  text-transform: uppercase;
  line-height: 1.1;
@@ -807,7 +808,7 @@ input#submit:hover, input#submit:active {
 }
 .tags a{
   background-color:#a38018;
-  padding:7px; 
+  padding:7px;
   color:#fff;
   display:inline-block;
   font-size:11px;
@@ -831,7 +832,7 @@ input#submit:hover, input#submit:active {
 .fa-file-code-o {
   color: #0686a8;
 }
-.helvet {  
+.helvet {
   color: #fff;
   font-size: 70px;
   text-align: center;
@@ -855,7 +856,7 @@ input#submit:hover, input#submit:active {
   background-blend-mode: screen;
   */  content: " ";
   padding: 70px 0 100px 0px;
-  background: url(../theme-onphpid-master-juni/img/backom3.png) no-repeat center center; 
+  background: url(../theme-onphpid-master-juni/img/backom3.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -865,7 +866,7 @@ input#submit:hover, input#submit:active {
 .bg-blue {
   /*background-color: #3C7A9E;*/
   /*background: #0071bc url('../images/back/footer.png') bottom center no-repeat;*/
-  background:  url('../images/KGN_UJK_4.png') no-repeat center center fixed; 
+  background:  url('../images/KGN_UJK_4.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1176,11 +1177,10 @@ input#submit:hover, input#submit:active {
   .product1 .small {
     font-family: "arial";
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 10px;
     text-align: center;
   }
-
   .product2 {
     font-size: 12px;
     font-family: 'Arial';
@@ -1194,10 +1194,12 @@ input#submit:hover, input#submit:active {
   .product2 .small {
     font-family: "arial";
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 10px;
     text-align: center;
   }
 
-
-  
+.product2:hover,
+.product1:hover {
+  background-color: #CCCCCC;
+}
