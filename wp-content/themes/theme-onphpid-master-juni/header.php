@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url()); ?>" title="Kominfo">
-                        <img style="margin-top: -5px;"
+                        <img style="margin-top: -5px; margin-left: -40px;"
                         src="<?php echo get_template_directory_uri() .'/img/bopas.png';?>" class="img-responsive hidden-xs" width="43%">
                          <img style="margin-top: -55px;"
                         src="<?php echo get_template_directory_uri() .'/img/bopas.png';?>" class="img-responsive hidden-lg hidden-md hidden-sm" width="70%">
