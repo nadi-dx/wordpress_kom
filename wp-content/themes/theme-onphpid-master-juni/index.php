@@ -19,26 +19,48 @@ get_header();?>
           <div class="col-md-12">
             <div class="row">
               <div class="hero-content center-row-sm text-center">
-                <h1 class="hero-title" style="color: #fff;"><?php bloginfo('name');?></h1>
+                <h1 class="hero-title" style="color: #fff; font-size: 3em;  text-transform: uppercase;"><?php bloginfo('name');?></h1>
                 <br>
-           <!--  <div class="hero-box">
+           <!--  <div class="hero-box"> 
               <p class="h4">Pendidikan karakter dengan pembiasaan karakter kebersihan, respek, disiplin, daya juang.</p>
             </div> -->
           </div>
-          <div class="row grid-divider">
-            <div class="col-sm-4">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <h1><i class="ion ion-arrow-down-c"></i></h1>
+              <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                  <form action="functions.php" method="post">
+                    <input type="text" class="form-control input-lg" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
+                  </form>
+                  <span class="input-group-btn"  aria-hidden="true">
+                    <button class="btn btn-info btn-lg" type="button">
+                     <img src="<?php echo get_template_directory_uri() .'/img/search2.png';?>">
+                   </button>
+                 </span>
+               </div>
+             </div>
+           </div>
+      
+         <div class="row grid-divider">
+          <div class="col-sm-4">
+            <div class="school1">
               <div class="col-padding">
                 <strong><h3>120+</h3></strong> 
                 <p>TAG</p>
               </div>
             </div>
-            <div class="col-sm-4">
+          </div>
+          <div class="col-sm-4">
+            <div class="school1">
               <div class="col-padding">
                <strong><h3>34,000+</h3></strong> 
                <p>DATASET</p>
              </div>
            </div>
-           <div class="col-sm-4">
+         </div>
+         <div class="col-sm-4">
+           <div class="school1">
             <div class="col-padding">
               <strong><h3>55</h3></strong>
               <p>ORGANISASI</p>
@@ -47,9 +69,10 @@ get_header();?>
         </div>
       </div>
     </div>
-
-
   </div>
+
+
+</div>
 </div>
 </div>
 </section>
@@ -59,97 +82,77 @@ get_header();?>
   <div class="row">
    <div class="row imagetiles">
     <div class="black">
-      <div class="col-md-12">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <h1><i class="ion ion-arrow-down-c"></i></h1>
-          <div id="custom-search-input">
-            <div class="input-group col-md-12">
-              <form action="functions.php" method="post">
-                <input type="text" class="form-control input-lg" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
-              </form>
-              <span class="input-group-btn"  aria-hidden="true">
-                <button class="btn btn-info btn-lg" type="button">
-                 <img src="<?php echo get_template_directory_uri() .'/img/search2.png';?>">
-               </button>
-             </span>
-           </div>
-         </div>
-       </div>
-     </div>
-     <br><br>
+
      <center class="hidden-xs">
        <div class="row">
          <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="<?php echo site_ckan();?>/group/telekomunikasi">
-            <div class="hover panel">
-              <div class="front">
-               <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;">
-               <div class="frontLocation">
-                 Telekomunikasi
-               </div>
+           <div class="panel panel-default">
+            <div class="panel-body"> 
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;"></div>   
+              <div class="panel-footer">Telekomunikasi</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <a href="<?php echo site_ckan();?>/group/pos">
+            <div class="panel panel-default">
+              <div class="panel-body"> 
+                <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
+              </div>
+              <div class="panel-footer">
+               Pos
              </div>
            </div>
          </a>
        </div>
        <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/pos">
-         <div class="hover panel">
-          <div class="front">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
-            <div class="frontLocation">
-             Pos
-           </div>
+        <a href="<?php echo site_ckan();?>/group/internet">
+         <div class="panel panel-default">
+          <div class="panel-body">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/internet.png';?>" class="img-responsive" width="100%;">
+          </div>
+          <div class="panel-footer">
+           Internet
          </div>
        </div>
      </a>
    </div>
    <div class="col-md-2 col-sm-4 col-xs-6">
-    <a href="<?php echo site_ckan();?>/group/internet">
-      <div class="hover panel">
-        <div class="front">
-          <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/internet.png';?>" class="img-responsive" width="100%;">
-          <div class="frontLocation">
-           Internet
-         </div>
-       </div>
-     </div>
-   </a>
- </div>
- <div class="col-md-2 col-sm-4 col-xs-6">
-  <a href="<?php echo site_ckan();?>/group/penyiaran">
-   <div class="hover panel">
-    <div class="front">
-      <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/penyiaran.png';?>" class="img-responsive" width="100%;">
-      <div class="frontLocation">
+    <a href="<?php echo site_ckan();?>/group/penyiaran">
+     <div class="panel panel-default">
+      <div class="panel-body">
+        <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/penyiaran.png';?>" class="img-responsive" width="100%;">
+      </div>
+      <div class="panel-footer">
        Penyiaran
      </div>
    </div>
- </div>
-</a>
+ </a>
 </div>
 <div class="col-md-2 col-sm-4 col-xs-6">
   <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
-   <div class="hover panel">
-    <div class="front">
+   <div class="panel panel-default">
+    <div class="panel-body">
       <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/sistem.png';?>" class="img-responsive" width="100%;">
-      <div class="frontLocation">
-       Elektronik
-     </div>
+    </div>
+    <div class="panel-footer">
+     Elektronik
    </div>
  </div>
 </a>
 </div>
 <div class="col-md-2 col-sm-4 col-xs-6">
   <a href="<?php echo site_ckan();?>/group/alat-dan-perangkat">
-    <div class="hover panel">
-      <div class="front">
-        <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/alat.png';?>" class="img-responsive" width="100%;">
-        <div class="frontLocation">
-         Komunikasi
-       </div>
-     </div>
+   <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/alat.png';?>" class="img-responsive" width="100%;">
+    </div>
+    <div class="panel-footer">
+     Komunikasi
    </div>
- </a>
+ </div>
+</a>
 </div>
 </div>
 </center>
@@ -161,67 +164,67 @@ get_header();?>
     <center class="hidden-xs">
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/frekuensi-radio">
-          <div class="hover panel">
-            <div class="front">
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/radio.png';?>" class="img-responsive" width="100%;">
-              <div class="frontLocation">
-               Frekuensi
-             </div>
-           </div>
-         </div>
-       </a>
-     </div>
-     <div class="col-md-2 col-sm-4 col-xs-6">
-       <!-- <br> -->
-       <a href="<?php echo site_ckan();?>/group/e-commerce">
-         <div class="hover panel">
-          <div class="front">
-           <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/e-commerce.png';?>" class="img-responsive" width="100%;">
-           <div class="frontLocation">
-             E-Commerse
-           </div>
+         <div class="panel panel-default">
+          <div class="panel-body">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/radio.png';?>" class="img-responsive" width="100%;">
+          </div>
+          <div class="panel-footer">
+           Frekuensi
          </div>
        </div>
      </a>
    </div>
    <div class="col-md-2 col-sm-4 col-xs-6">
-    <!-- <br> -->
-    <a href="<?php echo site_ckan();?>/group/e-government">
-      <div class="hover panel">
-        <div class="front">
-         <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/e-gov.png';?>" class="img-responsive" width="100%;">
-         <div class="frontLocation">
-           E-government
-         </div>
+     <!-- <br> -->
+     <a href="<?php echo site_ckan();?>/group/e-commerce">
+      <div class="panel panel-default">
+        <div class="panel-body">
+         <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/e-commerce.png';?>" class="img-responsive" width="100%;">
+       </div>
+       <div class="panel-footer">
+         E-Commerse
        </div>
      </div>
    </a>
  </div>
  <div class="col-md-2 col-sm-4 col-xs-6">
   <!-- <br> -->
+  <a href="<?php echo site_ckan();?>/group/e-government">
+   <div class="panel panel-default">
+    <div class="panel-body">
+     <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/e-gov.png';?>" class="img-responsive" width="100%;">
+   </div>
+   <div class="panel-footer">
+     E-government
+   </div>
+ </div>
+</a>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+  <!-- <br> -->
   <a href="<?php echo site_ckan();?>/group/domain">
-    <div class="hover panel">
-      <div class="front">
-       <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/domain.png';?>" class="img-responsive" width="100%;">
-       <div class="frontLocation">
-        Domain
-      </div>
-    </div>
+   <div class="panel panel-default">
+    <div class="panel-body">
+     <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/domain.png';?>" class="img-responsive" width="100%;">
+   </div>
+   <div class="panel-footer">
+    Domain
   </div>
+</div>
 </a>
 </div>
 <div class="col-md-2 col-sm-4 col-xs-6">
   <!-- <br> -->
   <a href="<?php echo site_ckan();?>/group/keamanan-informasi">
-    <div class="hover panel">
-      <div class="front">
-      <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/keamanan.png';?>" class="img-responsive" width="100%;">
-       <div class="frontLocation">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/keamanan.png';?>" class="img-responsive" width="100%;">
+      </div>
+      <div class="panel-footer">
         Keamanan
       </div>
     </div>
-  </div>
-</a>
+  </a>
 </div>
 </center>
 </div>
@@ -333,7 +336,7 @@ get_header();?>
 </div>
 
 
-<section class="jumbotron" style="background: #6b7f9e;">
+<section class="jumbotron">
   <div class="container">
     <div class="row">
 
@@ -355,44 +358,7 @@ get_header();?>
  </div>
 </div>
 <br>
-<!-- Enjoy!-->
-<!-- Grapik Ckan  -->
-<!-- <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-md-6">
-         <div class="contact-box center-version">
-           <div id="donutchart" style="height: 500px;"></div>
-         </div>
-       </div>
 
-       <div class="col-md-6">
-        <div class="contact-box center-version">
-          <div id="piechart_3d" style="height: 500px;"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-6">
-        <div class="contact-box center-version">
-         <div id="chart_lines" style="height: 500px;"></div>
-       </div>
-     </div>
-     <div class="col-md-6">
-       <div class="contact-box center-version">
-         <div id="chart_div" style="height: 500px;"></div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-
-</section> -->
 
 <section style="background: #6b7f9e; padding-top: 30px; padding-bottom: 30px;">
   <div class="container">
