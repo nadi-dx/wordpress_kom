@@ -1449,7 +1449,14 @@ input#submit:hover, input#submit:active {
   }
 
 
-
+.navbar-default .navbar-nav > li > a {
+    /* color: #777; */
+    text-transform: uppercase;
+    color: #4679b2;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: Arial;
+}
 
 
 

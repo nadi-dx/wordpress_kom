@@ -26,22 +26,22 @@ get_header();?>
             </div> -->
           </div>
 
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <h1><i class="ion ion-arrow-down-c"></i></h1>
-              <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                  <form action="functions.php" method="post">
-                    <input type="text" class="form-control input-lg" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
-                  </form>
-                  <span class="input-group-btn"  aria-hidden="true">
-                    <button class="btn btn-info btn-lg" type="button">
-                     <img src="<?php echo get_template_directory_uri() .'/img/search2.png';?>">
-                   </button>
-                 </span>
-               </div>
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h1><i class="ion ion-arrow-down-c"></i></h1>
+            <div id="custom-search-input">
+              <div class="input-group col-md-12">
+                <form action="functions.php" method="post">
+                  <input type="text" class="form-control input-lg" name="data" placeholder="Cari Data" aria-describedby="basic-addon1">
+                </form>
+                <span class="input-group-btn"  aria-hidden="true">
+                  <button class="btn btn-info btn-lg" type="button">
+                   <img src="<?php echo get_template_directory_uri() .'/img/search2.png';?>">
+                 </button>
+               </span>
              </div>
            </div>
-      
+         </div>
+
          <div class="row grid-divider">
           <div class="col-sm-4">
             <div class="school1">
@@ -84,51 +84,59 @@ get_header();?>
     <div class="black">
 
      <center class="hidden-xs">
-       <div class="row">
-         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="<?php echo site_ckan();?>/group/telekomunikasi">
-           <div class="panel panel-default">
-            <div class="panel-body"> 
-              <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;"></div>   
-              <div class="panel-footer">Telekomunikasi</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="<?php echo site_ckan();?>/group/pos">
-            <div class="panel panel-default">
-              <div class="panel-body"> 
-                <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
-              </div>
-              <div class="panel-footer">
-               Pos
-             </div>
-           </div>
-         </a>
-       </div>
-       <div class="col-md-2 col-sm-4 col-xs-6">
-        <a href="<?php echo site_ckan();?>/group/internet">
-         <div class="panel panel-default">
-          <div class="panel-body">
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/internet.png';?>" class="img-responsive" width="100%;">
+       <div class="container">
+        <div class="row">
+          <div class="OurBlog">
+            <h4>TOPIK</h4>
+            <hr style="border-top: 1px solid #333;">
           </div>
-          <div class="panel-footer">
-           Internet
-         </div>
-       </div>
-     </a>
-   </div>
-   <div class="col-md-2 col-sm-4 col-xs-6">
-    <a href="<?php echo site_ckan();?>/group/penyiaran">
-     <div class="panel panel-default">
-      <div class="panel-body">
-        <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/penyiaran.png';?>" class="img-responsive" width="100%;">
+        </div>
       </div>
-      <div class="panel-footer">
-       Penyiaran
+      <div class="row">
+       <div class="col-md-2 col-sm-4 col-xs-6">
+        <a href="<?php echo site_ckan();?>/group/telekomunikasi">
+         <div class="panel panel-default">
+          <div class="panel-body"> 
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;"></div>   
+            <div class="panel-footer">Telekomunikasi</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <a href="<?php echo site_ckan();?>/group/pos">
+          <div class="panel panel-default">
+            <div class="panel-body"> 
+              <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
+            </div>
+            <div class="panel-footer">
+             Pos
+           </div>
+         </div>
+       </a>
      </div>
+     <div class="col-md-2 col-sm-4 col-xs-6">
+      <a href="<?php echo site_ckan();?>/group/internet">
+       <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/internet.png';?>" class="img-responsive" width="100%;">
+        </div>
+        <div class="panel-footer">
+         Internet
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-md-2 col-sm-4 col-xs-6">
+  <a href="<?php echo site_ckan();?>/group/penyiaran">
+   <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/penyiaran.png';?>" class="img-responsive" width="100%;">
+    </div>
+    <div class="panel-footer">
+     Penyiaran
    </div>
- </a>
+ </div>
+</a>
 </div>
 <div class="col-md-2 col-sm-4 col-xs-6">
   <a href="<?php echo site_ckan();?>/group/sistem-elektronik">
