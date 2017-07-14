@@ -677,7 +677,7 @@ input#submit:hover, input#submit:active {
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   }
-  
+
 
 
 
@@ -1173,7 +1173,7 @@ input#submit:hover, input#submit:active {
     margin-top: -40px;
     border-radius: 0px 0px 0px 0px;
     padding: 50px 50px 40px 50px;
-    background: #fff;
+    background: #FFF;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1220,7 +1220,7 @@ input#submit:hover, input#submit:active {
 
 
   .panel .pad {
-    padding: 0 15px; 
+    padding: 0 15px;
   }
   .panel.flip .action {
     display: none;
@@ -1299,6 +1299,10 @@ input#submit:hover, input#submit:active {
     background-color: #333;
     border: 0px solid #fff;
   }
+  .panel-body:hover {
+    opacity: 0.5;
+    transition: .5s ease;
+  }
   .panel-footer {
     background-color: #eee;
     color: #000;
@@ -1308,7 +1312,7 @@ input#submit:hover, input#submit:active {
 
   /*--footer--*/
   footer {
-     padding: 0px 0 0px; 
+     padding: 0px 0 0px;
   }
   .footer-top-layout {
     background: #1c1c1c none repeat scroll 0 0;
@@ -1372,7 +1376,7 @@ input#submit:hover, input#submit:active {
 }
   .footer-top-layout [class*="col-sm-"]:last-child {
     border-right: medium none;
-  } 
+  }
   .footer-top-layout {
     color: #ffffff;
   }
@@ -1457,6 +1461,9 @@ input#submit:hover, input#submit:active {
     font-weight: 550;
     font-family: Arial;
 }
-
-
-
+.subjudul {
+  color: #333333;
+}
+.subjudul-2 {
+  color: #FFFFFF;
+}

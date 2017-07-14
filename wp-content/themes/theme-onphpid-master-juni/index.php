@@ -21,7 +21,7 @@ get_header();?>
               <div class="hero-content center-row-sm text-center">
                 <h1 class="hero-title" style="color: #fff; font-size: 3em;  text-transform: uppercase;"><?php bloginfo('name');?></h1>
                 <br>
-           <!--  <div class="hero-box"> 
+           <!--  <div class="hero-box">
               <p class="h4">Pendidikan karakter dengan pembiasaan karakter kebersihan, respek, disiplin, daya juang.</p>
             </div> -->
           </div>
@@ -46,7 +46,7 @@ get_header();?>
           <div class="col-sm-4">
             <div class="school1">
               <div class="col-padding">
-                <strong><h3>120+</h3></strong> 
+                <strong><h3>120+</h3></strong>
                 <p>TAG</p>
               </div>
             </div>
@@ -54,7 +54,7 @@ get_header();?>
           <div class="col-sm-4">
             <div class="school1">
               <div class="col-padding">
-               <strong><h3>34,000+</h3></strong> 
+               <strong><h3>34,000+</h3></strong>
                <p>DATASET</p>
              </div>
            </div>
@@ -82,13 +82,14 @@ get_header();?>
   <div class="row">
    <div class="row imagetiles">
     <div class="black">
+      <div class="white">
 
      <center class="hidden-xs">
        <div class="container">
         <div class="row">
           <div class="OurBlog">
-            <h4>TOPIK</h4>
-            <hr style="border-top: 1px solid #333;">
+            <h4 class="subjudul">TOPIK</h4>
+            <hr style="border-top: 1px solid #333333;">
           </div>
         </div>
       </div>
@@ -96,8 +97,8 @@ get_header();?>
        <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/telekomunikasi">
          <div class="panel panel-default">
-          <div class="panel-body"> 
-            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;"></div>   
+          <div class="panel-body">
+            <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/telekomunikasi.png';?>" class="img-responsive" width="100%;"></div>
             <div class="panel-footer">Telekomunikasi</div>
           </div>
         </a>
@@ -105,7 +106,7 @@ get_header();?>
       <div class="col-md-2 col-sm-4 col-xs-6">
         <a href="<?php echo site_ckan();?>/group/pos">
           <div class="panel panel-default">
-            <div class="panel-body"> 
+            <div class="panel-body">
               <img src="<?php echo get_template_directory_uri() .'/img/icon/ICON/pos.png';?>" class="img-responsive" width="100%;">
             </div>
             <div class="panel-footer">
@@ -238,7 +239,7 @@ get_header();?>
 </div>
 </div>
 
-
+</div>
 </div>
 
 </div>
@@ -344,7 +345,15 @@ get_header();?>
 </div>
 
 
-<section class="jumbotron">
+<section class="jumbotron" style="background-color: #0D47A1;">
+  <div class="container">
+   <div class="row">
+     <div class="OurBlog">
+       <h4 class="subjudul-2">INFOGRAFIS</h4>
+       <hr style="border-top: 1px solid #fff;">
+     </div>
+   </div>
+ </div>
   <div class="container">
     <div class="row">
 
@@ -357,6 +366,14 @@ get_header();?>
 
 <!-- Created by Abdurohman-->
 <div class="container">
+ <div class="row">
+   <div class="OurBlog">
+     <h4 class="subjudul">DATA TERBARU</h4>
+     <hr style="border-top: 1px solid #333333;">
+   </div>
+ </div>
+</div>
+<div class="container">
   <div class="row">
     <div class="col-md-12">
       <div id="ckan-headline-box" >
@@ -368,7 +385,7 @@ get_header();?>
 <br>
 
 
-<section style="background: #6b7f9e; padding-top: 30px; padding-bottom: 30px;">
+<section style="background: #0D47A1; padding-top: 30px; padding-bottom: 30px;">
   <div class="container">
     <div class="row">
       <?php echo do_shortcode('[logo_carousel_slider]'); ?>

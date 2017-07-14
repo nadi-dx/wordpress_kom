@@ -38,7 +38,7 @@ function theme_wp_scripts()
 
     // url ke bootstrap.min.js yang berada css/bootstrap.min.css
     // wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css');
-    wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('cleandblog-style', get_template_directory_uri() . '/css/clean-blog.min.css');
 
     /**

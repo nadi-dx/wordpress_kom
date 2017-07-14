@@ -41,9 +41,6 @@
                          <img style="margin-top: -55px;"
                         src="<?php echo get_template_directory_uri() .'/img/bopas.png';?>" class="img-responsive hidden-lg hidden-md hidden-sm" width="70%">
                     </a>
-                    <!-- <a class="navbar-brand img-responsive" href="<?php echo esc_url(home_url()); ?>"
-                       style="background-image: url('<?php echo get_template_directory_uri() .'/img/bopas.png';?>'); width: 100%; ">
-                   </a> -->
                </div>
 
                <!-- Collect the nav links, forms, and other content for toggling -->
