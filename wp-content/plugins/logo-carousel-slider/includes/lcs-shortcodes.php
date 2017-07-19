@@ -32,8 +32,8 @@ ob_start();
 	$lcsPagination = lcs_get_option( 'lcs_pagination', 'lcs_general_settings', 'no' );
 
 	$args = array(
-		'post_type'      => 'logocarousel', 
-		'posts_per_page' => -1 
+		'post_type'      => 'logocarousel',
+		'posts_per_page' => -1
 	);
 
 	$loop = new WP_Query( $args );
@@ -56,7 +56,7 @@ ob_start();
 	<?php } ?>
 	<div id="lcs_logo_carousel_slider" class="owl-carousel">
 	    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	        <?php 
+	        <?php
 	        $post_id = get_the_ID();
 	        $lcs_logo_link = get_post_meta( $post_id, 'lcs_logo_link', true );
 
@@ -68,9 +68,9 @@ ob_start();
         	<div class="lcs_logo_container">
         	  <?php if(!empty($lcs_logo_link)) { ?>
 	            <a href="<?php echo $lcs_logo_link; ?>" class="lcs_logo_link" target="_blank">
-	            	<?php 
+	            	<?php
 	            	if ( $lcsImageCrop == "yes" ) {
-	            		echo '<img src="'.$lcs_logo.'" alt="'. $lcs_logo_mata . '" />'; 
+	            		echo '<img src="'.$lcs_logo.'" alt="'. $lcs_logo_mata . '" />';
 					} else {
 						echo '<img src="'.$lcs_logo_url[0].'" alt="'. $lcs_logo_mata . '" />';
 					}
@@ -78,9 +78,9 @@ ob_start();
 	            </a>
 	          <?php } else { ?>
 	            <a class="lcs_logo_link not_active">
-	            	<?php 
+	            	<?php
 	            	if ( $lcsImageCrop == "yes" ) {
-	            		echo '<img src="'.$lcs_logo.'" alt="'. $lcs_logo_mata . '" />'; 
+	            		echo '<img src="'.$lcs_logo.'" alt="'. $lcs_logo_mata . '" />';
 					} else {
 						echo '<img src="'.$lcs_logo_url[0].'" alt="'. $lcs_logo_mata . '" />';
 					}
@@ -92,16 +92,16 @@ ob_start();
             	       <a href="<?php echo $lcs_logo_link; ?>" target="_blank"><h3 class="lcs_logo_title"><?php echo get_the_title() ?></h3></a>
               		<?php } else { ?>
             	       <h3 class="lcs_logo_title"><?php echo get_the_title() ?></h3>
-					<?php } ?>              		
+					<?php } ?>
               <?php } ?>
-            </div> 	            
+            </div>
 	    <?php endwhile; wp_reset_postdata(); ?>
-	    <?php else: 
+	    <?php else:
 		_e('No logos found', 'logo-carousel-slider');
 	    endif; ?>
 	</div> <!-- End lcs_logo_carousel_slider -->
 
-	<?php 
+	<?php
 
 	$lcs_rtl_direction = '';
 	if ( is_rtl() ) {
@@ -115,14 +115,15 @@ ob_start();
 	echo '<script type="text/javascript">
 		jQuery(document).ready(function($) {
 		  jQuery("#lcs_logo_carousel_slider").owlCarousel({
-				autoPlay: '.$lcsAutoPlayRun.', 
+				autoPlay: '.$lcsAutoPlayRun.',
 				items : '.$lcsLogoItems.',
-				itemsTablet : [768, 3],
-				itemsMobile : [479, 2],
+				itemsTablet : [1194, 3],
+        itemsTabletSmall: [900, 2],
+				itemsMobile : [480, 1],
 				pagination : '.$lcsPagiTrueFalse.',
 				navigation : '.$lcsNavTrueFalse.',
-				navigationText : ["‹","›"],	
-				slideSpeed: 700,			
+				navigationText : ["‹","›"],
+				slideSpeed: 700,
 				'.$lcs_rtl_direction.'
 		  });
 		});
@@ -132,4 +133,3 @@ return $carousel_content;
 }
 
 add_shortcode("logo_carousel_slider", "lcs_carousel_shortcode");
-

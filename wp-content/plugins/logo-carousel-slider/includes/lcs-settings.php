@@ -44,12 +44,12 @@ class lcs_Settings_API_Class {
             array(
                 'id' => 'lcs_slider_settings',
                 'title' => __( 'Slider Settings', 'logo-carousel-slider' ),
-                'desc' => __('<p class="lcs_pro_notice">Slider Settings only available in <a href="http://adlplugins.com/plugin/logo-carousel-slider-pro" target="_blank">Pro version</a></p>', 'logo-carousel-slider')
+                // 'desc' => __('<p class="lcs_pro_notice">Slider Settings only available in <a href="http://adlplugins.com/plugin/logo-carousel-slider-pro" target="_blank">Pro version</a></p>', 'logo-carousel-slider')
             ),
             array(
                 'id' => 'lcs_style_settings',
                 'title' => __( 'Style Settings', 'logo-carousel-slider' ),
-                'desc' => __('<p class="lcs_pro_notice">Style Settings only available in <a href="http://adlplugins.com/plugin/logo-carousel-slider-pro" target="_blank">Pro version</a></p>', 'logo-carousel-slider')
+                // 'desc' => __('<p class="lcs_pro_notice">Style Settings only available in <a href="http://adlplugins.com/plugin/logo-carousel-slider-pro" target="_blank">Pro version</a></p>', 'logo-carousel-slider')
             ),
             array(
                 'id' => 'lcs_support',
@@ -207,7 +207,7 @@ class lcs_Settings_API_Class {
                     'label'             => __( 'Logo items (on Desktop, screen larger than 1198px)', 'logo-carousel-slider' ),
                     'desc'              => __( 'Maximum amount of items to display at a time on Desktop that screen size larger than 1198px', 'logo-carousel-slider' ),
                     'type'              => 'number',
-                    'default'           => '5',
+                    'default'           => '4',
                     'sanitize_callback' => 'intval'
                 ),
                 array(
@@ -231,7 +231,7 @@ class lcs_Settings_API_Class {
                     'label'             => __( 'Logo items (on Mobile)', 'logo-carousel-slider' ),
                     'desc'              => __( 'Maximum amount of items to display at a time on Mobile', 'logo-carousel-slider' ),
                     'type'              => 'number',
-                    'default'           => '2',
+                    'default'           => '1',
                     'sanitize_callback' => 'intval'
                 ),
                 array(
@@ -435,12 +435,12 @@ $settings = new lcs_Settings_API_Class();
 
 //Retrieving the values
 function lcs_get_option( $option, $section, $default = '' ) {
- 
+
     $options = get_option( $section );
- 
+
     if ( isset( $options[$option] ) ) {
         return $options[$option];
     }
- 
+
     return $default;
 }

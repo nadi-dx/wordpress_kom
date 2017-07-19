@@ -211,12 +211,12 @@ if ( typeof Object.create !== "function" ) {
 			}
 			if(base.options.singleItem === true){
 				base.options.items = base.orignalItems = 1;
-				base.options.itemsCustom = false;
-				base.options.itemsDesktop = false;
-				base.options.itemsDesktopSmall = false;
-				base.options.itemsTablet = false;
-				base.options.itemsTabletSmall = false;
-				base.options.itemsMobile = false;
+				base.options.itemsCustom = true;
+				base.options.itemsDesktop = true;
+				base.options.itemsDesktopSmall = true;
+				base.options.itemsTablet = true;
+				base.options.itemsTabletSmall = true;
+				base.options.itemsMobile = true;
 				return false;
 			}
 
@@ -317,13 +317,13 @@ if ( typeof Object.create !== "function" ) {
 
 		appendWrapperSizes : function(){
 			var base = this,
-				width = base.$owlItems.length * base.itemWidth, 
+				width = base.$owlItems.length * base.itemWidth,
 				cssObj;
 
 			base.options['direction']=="rtl" ? cssObj = {"right":0,direction:"rtl"} : cssObj = {"left":0};
 			base.$owlWrapper.css({"width": width});
 			base.$owlWrapper.css(cssObj);
-			
+
 			base.appendItemsSizes();
 		},
 
@@ -603,7 +603,7 @@ if ( typeof Object.create !== "function" ) {
 				}
 				base.afterGo();
 				base.singleItemTransition();
-				
+
 				return false;
 			}
 			var goToPixel = base.positionsInArray[position];
@@ -758,7 +758,7 @@ if ( typeof Object.create !== "function" ) {
 
 		css2move : function(value){
 			var base = this, cssObj;
-			
+
 			base.options['direction']=="rtl" ? cssObj = {"right":value} : cssObj = {"left":value};
 			base.$owlWrapper.css(cssObj);
 		},
@@ -927,18 +927,18 @@ if ( typeof Object.create !== "function" ) {
 				/*Bilal*/
 				var position = $(this).position();
 
-                if(base.options['direction']=="rtl") { 
-                	positionRight = base.$owlItems.eq(0).width()*base.currentItem; 
+                if(base.options['direction']=="rtl") {
+                	positionRight = base.$owlItems.eq(0).width()*base.currentItem;
                 	locals.relativePos = positionRight;
                 	locals.offsetX = -getTouches(event).x + positionRight;
                 }
                 else {
                 	locals.relativePos = position.left;
                 	locals.offsetX = getTouches(event).x - position.left;
-                }				
+                }
 
 				locals.offsetY = getTouches(event).y - position.top;
-				
+
 				swapEvents("on");
 
 				locals.sliding = false;
@@ -947,7 +947,7 @@ if ( typeof Object.create !== "function" ) {
 
 			function dragMove(event){
 				var event = event.originalEvent || event || window.event;
-				
+
 				if(base.options['direction']=="rtl") {
 					base.newPosX = -getTouches(event).x - locals.offsetX;
 					base.newPosY = getTouches(event).y - locals.offsetY;
@@ -958,7 +958,7 @@ if ( typeof Object.create !== "function" ) {
 					base.newPosY = getTouches(event).y - locals.offsetY;
 					base.newRelativeX = base.newPosX - locals.relativePos;
 				}
-				
+
 				if (typeof base.options.startDragging === "function" && locals.dragging !== true && base.newRelativeX !== 0) {
 					locals.dragging = true;
 					base.options.startDragging.apply(base,[base.$elem]);
@@ -1004,9 +1004,9 @@ if ( typeof Object.create !== "function" ) {
 				}
 				else {
 					if (base.newRelativeX < 0) { base.dragDirection = base.owl.dragDirection = "left"; }
-					else { base.dragDirection = base.owl.dragDirection = "right"; }				
+					else { base.dragDirection = base.owl.dragDirection = "right"; }
 				}
-				
+
 				if(base.newRelativeX !== 0){
 					var newPosition = base.getNewPosition();
 					base.goTo(newPosition,false,"drag");
@@ -1024,13 +1024,13 @@ if ( typeof Object.create !== "function" ) {
 				}
 				swapEvents("off");
 			}
-			base.$elem.on(base.ev_types["start"], ".owl-wrapper", dragStart); 
+			base.$elem.on(base.ev_types["start"], ".owl-wrapper", dragStart);
 		},
 
 		getNewPosition : function(){
 			var base = this,
 				newPosition;
-			
+
 			newPosition = base.closestItem();
 
 			if(newPosition>base.maximumItem){
@@ -1056,7 +1056,7 @@ if ( typeof Object.create !== "function" ) {
 					} else {
 						base.currentItem = i;
 					}
-				} 
+				}
 				else if (goal + (base.itemWidth/20) < v && goal + (base.itemWidth/20) > (array[i+1] || array[i]-base.itemWidth) && base.moveDirection() === "right"){
 					if(base.options.scrollPerPage === true){
 						closest = array[i+1] || array[array.length-1];
@@ -1107,7 +1107,7 @@ if ( typeof Object.create !== "function" ) {
 				base.jumpTo(item);
 			});
 		},
-		
+
 		stopOnHover : function(){
 			var base = this;
 			if(base.options.stopOnHover === true && base.browser.isTouch !== true && base.options.autoPlay !== false){
@@ -1142,7 +1142,7 @@ if ( typeof Object.create !== "function" ) {
 				if( typeof $lazyImg.data("src") !== "string"){
 					$item.data("owl-loaded","loaded");
 					continue;
-				}				
+				}
 				if($item.data("owl-loaded") === undefined){
 					$lazyImg.hide();
 					$item.addClass("loading").data("owl-loaded","checked");
@@ -1173,7 +1173,7 @@ if ( typeof Object.create !== "function" ) {
 				iterations += 1;
 				if (base.completeImg($lazyImg.get(0)) || isBackgroundImg === true) {
 					showImage();
-				} else if(iterations <= 100){//if image loads in less than 10 seconds 
+				} else if(iterations <= 100){//if image loads in less than 10 seconds
 					setTimeout(checkLazyImage,100);
 				} else {
 					showImage();
@@ -1203,7 +1203,7 @@ if ( typeof Object.create !== "function" ) {
 				iterations += 1;
 				if ( base.completeImg($currentimg.get(0)) ) {
 					addHeight();
-				} else if(iterations <= 100){ //if image loads in less than 10 seconds 
+				} else if(iterations <= 100){ //if image loads in less than 10 seconds
 					setTimeout(checkImage,100);
 				} else {
 					base.wrapperOuter.css("height", ""); //Else remove height attribute
@@ -1399,7 +1399,7 @@ if ( typeof Object.create !== "function" ) {
 				position;
 
 			if(base.$elem.children().length === 0){return false;}
-			
+
 			if(targetPosition === undefined || targetPosition === -1){
 				position = -1;
 			} else {
@@ -1427,14 +1427,14 @@ if ( typeof Object.create !== "function" ) {
 
 	$.fn.owlCarousel.options = {
 		direction:'ltr',
-		
+
 		items : 5,
 		itemsCustom : false,
 		itemsDesktop : [1199,4],
 		itemsDesktopSmall : [979,3],
-		itemsTablet : [768,2],
+		itemsTablet : [720,2],
 		itemsTabletSmall : false,
-		itemsMobile : [479,1],
+		itemsMobile : [320,1],
 		singleItem : false,
 		itemsScaleUp : false,
 
@@ -1456,7 +1456,7 @@ if ( typeof Object.create !== "function" ) {
 		responsive : true,
 		responsiveRefreshRate : 200,
 		responsiveBaseWidth	: window,
-		
+
 
 		baseClass : "owl-carousel",
 		theme : "owl-theme",
@@ -1486,6 +1486,6 @@ if ( typeof Object.create !== "function" ) {
 		afterAction : false,
 		startDragging : false,
 		afterLazyLoad: false
-		
+
 	};
 })( jQuery, window, document );

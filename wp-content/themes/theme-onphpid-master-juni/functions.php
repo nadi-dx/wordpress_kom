@@ -102,7 +102,7 @@ if (isset($_POST['data'])){
 
 function site_ckan()
 {
-  $url = "http://202.89.117.149";
+  $url = "http://172.30.32.157";
   return $url;
 }
 
